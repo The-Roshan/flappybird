@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #70c5ce; /* Sky blue */
+    flex-direction: column;
+}
+
+canvas {
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #ffaa00;
+}
+
+#restartButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
